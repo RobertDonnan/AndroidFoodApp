@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbankimagebg"
+    android:padding="12dp"
+    tools:context=".ui.basket.Basket">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/basket"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+                android:id="@+id/packageContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="20dp"
+                android:text="@string/package_contents"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/white"
+                android:textSize="21sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listBasket"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="900dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_an_address"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtaddress"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:hint="Address"
+                    android:layout_marginStart="45dp"
+                    android:inputType="textPersonName"
+                    android:text="@string/addressab"
+                    android:textSize="20sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="18"
+                    app:met_singleLineEllipsis="true" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fields_with_symbol_are_required_only_enter_address_if_delivery"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                android:textColor="#9C1919"
+                android:textSize="16sp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/enter_a_date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="170dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                android:textColor="#9C1919"
+                android:textSize="16sp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="168dp"/>
+
+            <EditText
+                android:id="@+id/edtdate"
+                android:layout_width="110dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="160dp"
+                android:text="@string/date" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/enter_a_time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="230dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                android:textColor="#9C1919"
+                android:textSize="16sp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="225dp"/>
+
+            <Spinner
+                android:id="@+id/edttime"
+                android:layout_width="110dp"
+                android:layout_marginTop="230dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="170dp"
+                android:contentDescription=" "
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup_or_delivery"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="70dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                android:textColor="#9C1919"
+                android:textSize="16sp"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="65dp"/>
+
+            <Spinner
+                android:id="@+id/edtpord"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="170dp"
+                android:contentDescription=" "
+                android:spinnerMode="dropdown"/>
+
+        </RelativeLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnMakeOrder"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/make_order"
+            app:cornerRadius="4dp"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnViewOrders"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/view_orders"
+            app:cornerRadius="4dp"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

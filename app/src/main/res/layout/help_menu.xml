@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    tools:context=".helpMenu">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/help_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="200dp"
+        android:textStyle="bold"
+        android:text="@string/choose_the_items_to_be_added_to_your_package"
+        android:textSize="21dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-200dp"
+        android:text="@string/on_the_main_menu_browse_the_categories_and_press_the_one_that_your_item_belongs_to_feel_free_to_look_through_each_category_items_will_only_be_added_to_your_basket_once_the_basket_button_is_pressed_then_press_the_item_s_that_you_wish_to_add_to_your_basket_you_can_add_as_many_or_as_little_as_you_like_from_one_or_more_categories"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        android:text="@string/entered_the_required_details_to_complete_your_package_request"
+        android:textSize="21dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-100dp"
+        android:text="@string/once_you_add_the_amount_of_items_that_you_need_press_the_basket_button_to_view_your_basket_and_to_see_the_package_contents_on_this_page_you_should_fill_out_the_required_details_once_you_sign_in_your_name_and_number_is_already_stored_you_will_only_need_to_enter_your_address_if_your_package_is_a_delivery_once_you_have_entered_your_details_press_the_make_order_button_your_package_will_be_confirmed_then_you_can_press_view_orders_to_view_your_previously_made_orders"
+        android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="140dp"
+                android:text="@string/image_button_keys"
+                android:textSize="21dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-80dp"
+                android:src="@drawable/add_to_basket"
+                android:layout_marginRight="360dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:text="@string/add_to_basket"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-80dp"
+                android:src="@drawable/view_basket_from_homescreen"
+                android:layout_marginRight="360dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/view_basket_from_homescreen"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-80dp"
+                android:src="@drawable/view_basket_from_item_info"
+                android:layout_marginRight="360dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:text="@string/view_basket_from_item_info_page"
+                android:textSize="19dp" />
+
+            <Button
+                android:id="@+id/Sweden"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="@drawable/sweden"
+                app:icon="@drawable/sweden" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:text="Sweden"/>
+
+            <Button
+                android:id="@+id/Denmark"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="@drawable/sweden"
+                app:icon="@drawable/sweden" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:text="Denmark"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

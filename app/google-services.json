@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "783067586395",
+    "firebase_url": "https://food-bank-app-8ff4a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "food-bank-app-8ff4a",
+    "storage_bucket": "food-bank-app-8ff4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783067586395:android:289d28a84475d5f75c047e",
+        "android_client_info": {
+          "package_name": "com.example.androidfoodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783067586395-9l0jmmtsjc93jhuduahqeeadgc35sdlc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidfoodapp",
+            "certificate_hash": "e340aa4aa34cac2b62e9f3e4ca4ba831078c47e9"
+          }
+        },
+        {
+          "client_id": "783067586395-bgg9lrt5q0k3j0vscggks9bteec0fk5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALMqXve9R4xqUfnsknTZlsiq1d0SddiH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783067586395-bgg9lrt5q0k3j0vscggks9bteec0fk5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

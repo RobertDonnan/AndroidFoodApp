@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbankimagebg"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="@string/sign_up"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:text="@string/phone_number"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:inputType="phone"
+            android:text="@string/_07746969898"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColor="#F3EBEB"
+            android:textSize="28sp"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="12"
+            app:met_singleLineEllipsis="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40sp"
+            android:text="@string/name"
+            android:textColor="#ffffff"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:inputType="textPersonName"
+            android:textColor="#F3EBEB"
+            android:text="@string/stewie"
+            android:textSize="28sp"
+            android:textColorHighlight="@color/colorAccent"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="12"
+            app:met_singleLineEllipsis="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/password"
+            android:layout_marginBottom="30sp"
+            android:textColor="#ffffff"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="40sp"
+            android:textColor="#F3EBEB"
+            android:text="@string/_333"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="28sp"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_singleLineEllipsis="true" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="@string/sign_up"
+            app:cornerRadius="4dp"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

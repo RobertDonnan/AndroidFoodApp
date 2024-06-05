@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/foodbankimagebg"
+    tools:openDrawer="start">
+
+    <include
+        android:id="@+id/app_bar_home_page"
+        layout="@layout/app_bar_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home_page"
+        app:menu="@menu/activity_main_drawer">
+
+
+        <Button
+            android:id="@+id/menubutton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="400dp"
+            android:textColor="@color/black"
+            android:text="@string/menu" />
+
+        <Button
+            android:id="@+id/basketbutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="225dp"
+            android:layout_marginBottom="400dp"
+            android:textColor="@color/black"
+            android:text="@string/basket" />
+
+        <Button
+            android:id="@+id/pastOrdersbutton"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="400dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/previous_orders"
+            android:textColor="@color/black"
+             />
+
+        <Button
+            android:id="@+id/helpbutton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginBottom="400dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/help"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/contactbutton"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginBottom="400dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/contact"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/signOutbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginBottom="400dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/sign_out"
+            android:textColor="@color/black" />
+
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+
